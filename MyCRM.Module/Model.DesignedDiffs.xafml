@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="MyCRM">
+  <BOModel>
+    <Class Name="MyCRM.Module.BusinessObjects.Company">
+      <AppearanceRules>
+        <AppearanceRule Id="ShippingAddressRule" Criteria="[ShipToBilling] = True" TargetItems="ShippingAddress" Visibility="Hide" IsNewNode="True" />
+      </AppearanceRules>
+    </Class>
+  </BOModel>
+  <NavigationItems DefaultChildItemsDisplayStyle="LargeIcons">
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="Event_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SchedulerModuleBase" Version="19.1.2.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="19.1.2.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>
